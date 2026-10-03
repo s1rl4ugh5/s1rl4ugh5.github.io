@@ -3,68 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProbablePath's Home Page</title>
+    <title>SKR</title>
     <link rel="shortcut icon" href="avatar.ico" type="image/x-icon">
     <link rel="icon" href="avatar.ico" type="image/x-icon">
     <style>
         body {
-            font-family: Georgia, "Times New Roman", serif;
-            color: #111111;
-            background-color: #ffffff;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
+            font-family: monospace, monospace;
+            color: #d4d4d4;
+            background-color: #121212;
+            line-height: 1.5;
+            max-width: 760px;
+            margin: 50px auto;
             padding: 0 20px;
         }
         header {
             display: flex;
             align-items: center;
-            border-bottom: 2px solid #333333;
+            border-bottom: 1px solid #333333;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 25px;
-            border: 2px solid #333;
+        .logo {
+            width: 90px;
+            height: auto;
+            margin-right: 20px;
+            image-rendering: pixelated;
         }
         .header-titles h1 {
-            margin: 0 0 5px 0;
-            font-size: 2em;
-            font-family: monospace, monospace;
+            margin: 0 0 4px 0;
+            font-size: 1.8em;
+            color: #ffffff;
+            letter-spacing: -1px;
         }
         .header-titles p {
             margin: 0;
-            color: #555555;
-            font-style: italic;
+            color: #888888;
+            font-size: 0.95em;
         }
         h2 {
-            font-size: 1.3em;
-            border-bottom: 1px solid #cccccc;
+            font-size: 1.1em;
+            color: #ffffff;
+            border-bottom: 1px dashed #333333;
             padding-bottom: 4px;
-            margin-top: 30px;
-            font-family: monospace, monospace;
+            margin-top: 35px;
         }
         p, li {
-            font-size: 1.05em;
+            font-size: 0.95em;
+            color: #cccccc;
         }
         ul {
             padding-left: 20px;
         }
         .contact-box {
-            background-color: #f7f7f7;
-            border-left: 4px solid #333333;
+            background-color: #1a1a1a;
+            border-left: 3px solid #666666;
             padding: 10px 15px;
             margin: 20px 0;
-            font-family: monospace, monospace;
         }
         .badges {
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px dashed #cccccc;
+            border-top: 1px dashed #333333;
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
@@ -76,20 +75,20 @@
             border: none;
         }
         .badges img {
-            border: 1px solid #ddd;
+            border: 1px solid #333;
             padding: 2px;
-            background: #fff;
-            height: 35px;
+            background: #1a1a1a;
+            height: 31px;
             width: auto;
             object-fit: contain;
             display: block;
         }
         footer {
             margin-top: 50px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             color: #666666;
-            text-align: center;
-            border-top: 1px solid #eeeeee;
+            text-align: left;
+            border-top: 1px solid #222222;
             padding-top: 15px;
         }
     </style>
@@ -97,34 +96,32 @@
 <body>
 
     <header>
-        <img src="avatar.png" alt="ProbablePath Avatar" class="avatar">
+        <img src="ascii-art.png" alt="SKR Logo" class="logo">
         <div class="header-titles">
-            <h1>ProbablePath</h1>
-            <p>Programming, game development, VR, and research.</p>
+            <h1>SKR</h1>
+            <p>Systems, low-level architecture, and technical research.</p>
         </div>
     </header>
 
     <section>
-        <h2>// Home Page</h2>
-        <p>This is my personal space on the web. A place where I post things casually and without a fixed schedule: stuff I am experimenting with, technical problems I run into, thoughts, or small breakthroughs.</p>
-        <p>Here I focus on whatever catches my interest and whatever I am researching on my own.</p>
+        <h2>// Overview</h2>
+        <p>Personal technical scratchpad. Focused on understanding how things work beneath abstractions, building software from first principles, and documenting engineering processes without filler.</p>
     </section>
 
     <section>
-        <h2>// Interests and Topics</h2>
-        <p>What I usually share around here tends to revolve around:</p>
+        <h2>// Focus Areas</h2>
         <ul>
-            <li><strong>Game development and virtual reality (VR):</strong> Mechanics testing, virtual worlds, and interaction architectures.</li>
-            <li><strong>Programming and research:</strong> Proofs of concept, code troubleshooting, and exploring how systems work under the hood.</li>
-            <li><strong>Education and technical outreach:</strong> My own explanations of how I understand certain concepts or how I solve complex problems.</li>
+            <li><strong>Systems programming:</strong> Memory management, concurrency models, and runtime mechanics.</li>
+            <li><strong>Network protocols:</strong> Low-level socket communication and distributed data flow.</li>
+            <li><strong>Tooling:</strong> Designing minimal, reliable utilities that do one thing properly.</li>
         </ul>
     </section>
 
     <section>
         <h2>// Contact</h2>
-        <p>If you feel like discussing something, proposing technical debates, or getting in touch with me for any reason:</p>
+        <p>Direct communication channels:</p>
         <div class="contact-box">
-            Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#114;&#111;&#98;&#97;&#98;&#108;&#101;&#112;&#97;&#116;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#112;&#114;&#111;&#98;&#97;&#98;&#108;&#101;&#112;&#97;&#116;&#104;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+            Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#107;&#114;&#64;&#112;&#114;&#111;&#116;&#111;&#110;&#117;&#109;&#46;&#109;&#101;">skr [at] proton.me</a>
         </div>
     </section>
 
@@ -141,7 +138,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 ProbablePath</p>
+        <p>&copy; 2026 SKR</p>
     </footer>
 
 </body>
