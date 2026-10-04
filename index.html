@@ -61,12 +61,18 @@
             margin: 20px 0;
             font-family: monospace, monospace;
         }
-        .badges {
-            margin-top: 40px;
+        .footer-container {
+            margin-top: 50px;
             padding-top: 20px;
             border-top: 1px dashed #cccccc;
             display: flex;
+            justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
+            gap: 15px;
+        }
+        .badges {
+            display: flex;
             gap: 15px;
             align-items: center;
         }
@@ -85,12 +91,9 @@
             display: block;
         }
         footer {
-            margin-top: 50px;
             font-size: 0.9em;
             color: #666666;
-            text-align: center;
-            border-top: 1px solid #eeeeee;
-            padding-top: 15px;
+            text-align: right;
         }
     </style>
 </head>
@@ -128,21 +131,22 @@
         </div>
     </section>
 
-    <!-- Classic banners -->
-    <div class="badges">
-        <!-- Blue Ribbon Campaign -->
-        <a href="https://www.eff.org/pages/blue-ribbon-campaign" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.eff.org/files/br.gif" alt="Join the Blue Ribbon Online Free Speech Campaign" title="Electronic Frontier Foundation">
-        </a>
-        <!-- Free Software Foundation -->
-        <a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.gnu.org/graphics/gnu-head-mini.png" alt="Free Software Foundation" title="Free Software Foundation">
-        </a>
+    <!-- Pie de página unificado con iconos a la izquierda y copyright a la derecha -->
+    <div class="footer-container">
+        <div class="badges">
+            <!-- Blue Ribbon Campaign -->
+            <a href="https://www.eff.org/pages/blue-ribbon-campaign" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.eff.org/files/br.gif" alt="Join the Blue Ribbon Online Free Speech Campaign" title="Electronic Frontier Foundation">
+            </a>
+            <!-- Free Software Foundation -->
+            <a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.gnu.org/graphics/gnu-head-mini.png" alt="Free Software Foundation" title="Free Software Foundation">
+            </a>
+        </div>
+        <footer>
+            <p>&copy; 2026 𝕊𝟏𝕣𝕃𝟒𝕦gh𝟓</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2026 𝕊𝟏𝕣𝕃𝟒𝕦gh𝟓</p>
-    </footer>
 
 </body>
 </html>
