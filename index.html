@@ -6,23 +6,24 @@
     <title>𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓</title>
     <style>
         body {
-            font-family: monospace;
+            font-family: "Courier New", Courier, monospace, monospace;
             color: #d4d4d4;
             background-color: #121212;
-            line-height: 1.5;
+            line-height: 1.6;
             max-width: 760px;
-            margin: 50px auto;
+            margin: 40px auto;
             padding: 0 20px;
         }
         header {
             border-bottom: 1px solid #333333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
         }
         h1 {
             margin: 0;
-            font-size: 1.6em;
+            font-size: 1.5em;
             color: #ffffff;
+            font-weight: normal;
         }
         h2 {
             font-size: 1.0em;
@@ -33,20 +34,41 @@
         }
         ul {
             padding-left: 20px;
+            margin: 10px 0;
         }
-        .contact {
-            background: #1a1a1a;
-            border-left: 3px solid #666;
-            padding: 10px 15px;
-            margin: 15px 0;
+        li {
+            margin-bottom: 6px;
         }
         a {
-            color: #888888;
+            color: #8abeb7;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            margin: 15px 0;
+        }
+        .badges {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #333333;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .badges img {
+            border: 1px solid #333;
+            padding: 2px;
+            background: #1a1a1a;
+            height: 31px;
+            width: auto;
+            display: block;
         }
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.85em;
-            color: #555555;
+            color: #666666;
             border-top: 1px solid #222222;
             padding-top: 15px;
         }
@@ -59,21 +81,38 @@
     </header>
 
     <section>
-        <h2>// Proyectos y experimentos</h2>
+        <h2>// Sobre esto</h2>
+        <p>Espacio personal dedicado a sistemas, código abierto y cacharreo técnico. Sin pretensiones ni marketing.</p>
+    </section>
+
+    <section>
+        <h2>// Áreas de trabajo y experimentos</h2>
         <ul>
-            <li>Programación y software</li>
-            <li>Electrónica y hardware</li>
-            <li>Entornos 3D y metaversos</li>
-            <li>Experimentos en red</li>
+            <li>Programación y desarrollo de software</li>
+            <li>Electrónica, hardware y sistemas embebidos</li>
+            <li>Entornos 3D, gráficos y metaversos</li>
+            <li>Redes y experimentación en internet</li>
         </ul>
     </section>
 
     <section>
         <h2>// Contacto</h2>
         <div class="contact">
-            Email: <a href="mailto:s1rl4ugh5@tuta.io">s1rl4ugh5@tuta.io</a>
+            Correo electrónico: <a href="mailto:s1rl4ugh5@tuta.io">s1rl4ugh5@tuta.io</a>
         </div>
     </section>
+
+    <!-- Insignias clásicas de la vieja escuela -->
+    <div class="badges">
+        <!-- Blue Ribbon Campaign -->
+        <a href="https://www.eff.org/pages/blue-ribbon-campaign" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.eff.org/files/br.gif" alt="Blue Ribbon Campaign" title="Campaign for Free Speech Online">
+        </a>
+        <!-- Free Software Foundation -->
+        <a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.gnu.org/graphics/gnu-head-mini.png" alt="Free Software Foundation" title="Free Software Foundation">
+        </a>
+    </div>
 
     <footer>
         <p>there is no place like 127.0.0.1</p>
