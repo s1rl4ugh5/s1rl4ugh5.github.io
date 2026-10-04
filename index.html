@@ -1,75 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓</title>
+    <title>𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓 Home Page</title>
+    <link rel="shortcut icon" href="avatar.ico" type="image/x-icon">
+    <link rel="icon" href="avatar.ico" type="image/x-icon">
     <style>
         body {
-            font-family: "Courier New", Courier, monospace, monospace;
-            color: #d4d4d4;
-            background-color: #121212;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111111;
+            background-color: #ffffff;
             line-height: 1.6;
-            max-width: 760px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
         }
         header {
-            border-bottom: 1px solid #333333;
-            padding-bottom: 15px;
-            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
-        h1 {
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 2px solid #333;
+        }
+        .header-titles h1 {
+            margin: 0 0 5px 0;
+            font-size: 2em;
+            font-family: monospace, monospace;
+        }
+        .header-titles p {
             margin: 0;
-            font-size: 1.5em;
-            color: #ffffff;
-            font-weight: normal;
+            color: #555555;
+            font-style: italic;
         }
         h2 {
-            font-size: 1.0em;
-            color: #ffffff;
-            border-bottom: 1px dashed #333333;
+            font-size: 1.3em;
+            border-bottom: 1px solid #cccccc;
             padding-bottom: 4px;
             margin-top: 30px;
+            font-family: monospace, monospace;
+        }
+        p, li {
+            font-size: 1.05em;
         }
         ul {
             padding-left: 20px;
-            margin: 10px 0;
         }
-        li {
-            margin-bottom: 6px;
-        }
-        a {
-            color: #8abeb7;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact {
-            margin: 15px 0;
+        .contact-box {
+            background-color: #f7f7f7;
+            border-left: 4px solid #333333;
+            padding: 10px 15px;
+            margin: 20px 0;
+            font-family: monospace, monospace;
         }
         .badges {
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px dashed #333333;
+            border-top: 1px dashed #cccccc;
             display: flex;
+            flex-wrap: wrap;
             gap: 15px;
             align-items: center;
         }
+        .badges a {
+            display: inline-flex;
+            align-items: center;
+            border: none;
+        }
         .badges img {
-            border: 1px solid #333;
+            border: 1px solid #ddd;
             padding: 2px;
-            background: #1a1a1a;
-            height: 31px;
+            background: #fff;
+            height: 35px;
             width: auto;
+            object-fit: contain;
             display: block;
         }
         footer {
-            margin-top: 40px;
-            font-size: 0.85em;
+            margin-top: 50px;
+            font-size: 0.9em;
             color: #666666;
-            border-top: 1px solid #222222;
+            text-align: center;
+            border-top: 1px solid #eeeeee;
             padding-top: 15px;
         }
     </style>
@@ -77,36 +97,42 @@
 <body>
 
     <header>
-        <h1>𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓 ▄█▀█●</h1>
+        <img src="avatar.png" alt="Avatar" class="avatar">
+        <div class="header-titles">
+            <h1>𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓</h1>
+            <p>Programming, game development, VR, and research.</p>
+        </div>
     </header>
 
     <section>
-        <h2>// Sobre esto</h2>
-        <p>Espacio personal dedicado a sistemas, código abierto y cacharreo técnico. Sin pretensiones ni marketing.</p>
+        <h2>// Home Page</h2>
+        <p>This is my personal space on the web. A place where I post things casually and without a fixed schedule: stuff I am experimenting with, technical problems I run into, thoughts, or small breakthroughs.</p>
+        <p>Here I focus on whatever catches my interest and whatever I am researching on my own.</p>
     </section>
 
     <section>
-        <h2>// Áreas de trabajo y experimentos</h2>
+        <h2>// Interests and Topics</h2>
+        <p>What I usually share around here tends to revolve around:</p>
         <ul>
-            <li>Programación y desarrollo de software</li>
-            <li>Electrónica, hardware y sistemas embebidos</li>
-            <li>Entornos 3D, gráficos y metaversos</li>
-            <li>Redes y experimentación en internet</li>
+            <li><strong>Game development and virtual reality (VR):</strong> Mechanics testing, virtual worlds, and interaction architectures.</li>
+            <li><strong>Programming and research:</strong> Proofs of concept, code troubleshooting, and exploring how systems work under the hood.</li>
+            <li><strong>Education and technical outreach:</strong> My own explanations of how I understand certain concepts or how I solve complex problems.</li>
         </ul>
     </section>
 
     <section>
-        <h2>// Contacto</h2>
-        <div class="contact">
-            Correo electrónico: <a href="mailto:s1rl4ugh5@tuta.io">s1rl4ugh5@tuta.io</a>
+        <h2>// Contact</h2>
+        <p>If you feel like discussing something, proposing technical debates, or getting in touch with me for any reason:</p>
+        <div class="contact-box">
+            Email: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#49;&#114;&#108;&#52;&#117;&#103;&#104;&#115;&#64;&#116;&#117;&#116;&#97;&#46;&#105;&#111;">&#115;&#49;&#114;&#108;&#52;&#117;&#103;&#104;&#115;&#64;&#116;&#117;&#116;&#97;&#46;&#105;&#111;</a>
         </div>
     </section>
 
-    <!-- Insignias clásicas de la vieja escuela -->
+    <!-- Classic banners -->
     <div class="badges">
         <!-- Blue Ribbon Campaign -->
         <a href="https://www.eff.org/pages/blue-ribbon-campaign" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.eff.org/files/br.gif" alt="Blue Ribbon Campaign" title="Campaign for Free Speech Online">
+            <img src="https://www.eff.org/files/br.gif" alt="Join the Blue Ribbon Online Free Speech Campaign" title="Electronic Frontier Foundation">
         </a>
         <!-- Free Software Foundation -->
         <a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">
@@ -115,7 +141,7 @@
     </div>
 
     <footer>
-        <p>there is no place like 127.0.0.1</p>
+        <p>&copy; 2026 𝕊𝟏𝕣𝕃𝟒𝕦𝕘𝕙𝟓</p>
     </footer>
 
 </body>
