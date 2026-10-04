@@ -1,171 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>404 - Not Found</title>
-<link rel="icon" href="profile.ico" type="image/x-icon">
-<style>
-    body {
-        background: #f7f7f5;
-        color: #222220;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        max-width: 650px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        line-height: 1.6;
-        display: flex;
-        flex-direction: column;
-        min-height: 85vh;
-    }
-
-    @media (max-width: 600px) {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — 𝕊𝟏𝕣𝕃𝟒𝕦gh𝟓</title>
+    <link rel="shortcut icon" href="th3l4ugh5.jpeg" type="image/jpeg">
+    <link rel="icon" href="th3l4ugh5.jpeg" type="image/jpeg">
+    <style>
         body {
-            padding: 20px 15px;
+            font-family: Georgia, "Times New Roman", serif;
+            color: #111111;
+            background-color: #ffffff;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-    }
-
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    
-    .content {
-        flex: 1;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        letter-spacing: -0.5px;
-        margin-bottom: 10px;
-    }
-
-    .presentation {
-        margin-top: 20px;
-        color: #444;
-    }
-
-    .presentation p {
-        margin-bottom: 15px;
-    }
-
-    .sandbox-container {
-        margin-top: 30px;
-        border: 1px solid #e0e0dc;
-        background: #fff;
-        padding: 12px;
-        border-radius: 4px;
-    }
-
-    .sandbox-label {
-        font-family: monospace;
-        font-size: 0.8em;
-        color: #777;
-        margin-bottom: 8px;
-    }
-
-    canvas {
-        display: block;
-        width: 100%;
-        height: 120px;
-        background: #111;
-        border-radius: 2px;
-        image-rendering: pixelated;
-        image-rendering: crisp-edges;
-    }
-
-    .back-link {
-        font-family: monospace;
-        margin-top: 30px;
-        display: inline-block;
-    }
-
-    footer {
-        margin-top: 50px;
-        font-size: 0.85em;
-        color: #777;
-        border-top: 1px solid #e0e0dc;
-        padding-top: 20px;
-    }
-</style>
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #333333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 2px solid #333;
+        }
+        .header-titles h1 {
+            margin: 0 0 5px 0;
+            font-size: 2em;
+            font-family: monospace, monospace;
+        }
+        .header-titles p {
+            margin: 0;
+            color: #555555;
+            font-style: italic;
+        }
+        h2 {
+            font-size: 1.3em;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 4px;
+            margin-top: 30px;
+            font-family: monospace, monospace;
+        }
+        p {
+            font-size: 1.05em;
+        }
+        .error-box {
+            background-color: #f7f7f7;
+            border-left: 4px solid #cc0000;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: monospace, monospace;
+        }
+        a {
+            color: #111111;
+            text-decoration: underline;
+        }
+        .footer-container {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px dashed #cccccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .badges {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .badges a {
+            display: inline-flex;
+            align-items: center;
+            border: none;
+        }
+        .badges img {
+            border: 1px solid #ddd;
+            padding: 2px;
+            background: #fff;
+            height: 35px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+        footer {
+            font-size: 0.9em;
+            color: #666666;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 
-<div class="content">
-    <h1>404 - Lost in the void</h1>
-    
-    <hr style="border: 0; border-top: 1px solid #e0e0dc; margin: 20px 0;">
+    <header>
+        <img src="th3l4ugh5.jpeg" alt="Avatar" class="avatar">
+        <div class="header-titles">
+            <h1>𝕊𝟏𝕣𝕃𝟒𝕦gh𝟓</h1>
+            <p>Programming, game development, VR, and research.</p>
+        </div>
+    </header>
 
-    <div class="presentation">
-        <p>Oops. The page you are looking for doesn't exist, was deleted, or perhaps it never even existed in this timeline.</p>
-        <p>Even the little sheep has no idea what you're doing looking around here.</p>
+    <section>
+        <h2>// Error 404</h2>
+        <div class="error-box">
+            Status: Resource not found or path does not exist.
+        </div>
+        <p>You have reached a dead end or a broken link. The file, directory, or page you are looking for is nowhere to be found on this node.</p>
+        <p>Head back to the <a href="/">home page</a> and try again.</p>
+    </section>
+
+    <!-- Pie de página unificado -->
+    <div class="footer-container">
+        <div class="badges">
+            <!-- Blue Ribbon Campaign -->
+            <a href="https://www.eff.org/pages/blue-ribbon-campaign" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.eff.org/files/br.gif" alt="Join the Blue Ribbon Online Free Speech Campaign" title="Electronic Frontier Foundation">
+            </a>
+            <!-- Free Software Foundation -->
+            <a href="https://www.fsf.org" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.gnu.org/graphics/gnu-head-mini.png" alt="Free Software Foundation" title="Free Software Foundation">
+            </a>
+        </div>
+        <footer>
+            <p>&copy; 2026 𝕊𝟏𝕣𝕃𝟒𝕦gh𝟓</p>
+        </footer>
     </div>
-
-    <div class="sandbox-container">
-        <div class="sandbox-label">Ouchs!</div>
-        <canvas id="retroCanvas" width="160" height="60"></canvas>
-    </div>
-
-    <div class="back-link">
-        <a href="index.html">&lt;- cd /home/</a>
-    </div>
-</div>
-
-<script>
-    const canvas = document.getElementById('retroCanvas');
-    const ctx = canvas.getContext('2d');
-    ctx.imageSmoothingEnabled = false;
-
-    let posX = 70;
-    let direction = 1;
-
-    function render() {
-        ctx.fillStyle = '#111122';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        ctx.fillStyle = '#333344';
-        ctx.fillRect(0, 42, canvas.width, 18);
-        ctx.fillStyle = '#555566';
-        ctx.fillRect(0, 40, canvas.width, 2);
-
-        ctx.fillStyle = '#ff5555';
-        ctx.font = '10px monospace';
-        ctx.fillText('?', posX + 4, 22);
-
-        ctx.fillStyle = '#ffffff';
-        let legOffset = Math.floor(Math.abs(posX) / 4) % 2;
-        
-        ctx.fillRect(posX, 32, 12, 8);
-        ctx.fillRect(posX + 4, 28, 4, 6);
-        
-        if (legOffset === 0) {
-            ctx.fillRect(posX + 2, 40, 2, 4);
-            ctx.fillRect(posX + 8, 40, 2, 4);
-        } else {
-            ctx.fillRect(posX + 3, 40, 2, 4);
-            ctx.fillRect(posX + 7, 40, 2, 4);
-        }
-
-        posX += 0.2 * direction;
-        if (posX > 110 || posX < 30) {
-            direction *= -1;
-        }
-
-        requestAnimationFrame(render);
-    }
-    render();
-</script>
-
-<footer>
-    <p>© 2026 ItsGaleraDavid. Some rights reserved.</p>
-    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 8px;">
-        <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
-            <img alt="Creative Commons License" style="border-width:0; display: block;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
-        </a>
-        <span>
-            This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="color: #0066cc; text-decoration: none;">CC BY-NC-SA 4.0 International License</a>.
-        </span>
-    </div>
-</footer>
 
 </body>
 </html>
